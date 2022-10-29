@@ -1,0 +1,32 @@
+form {
+  width: max-content;
+  padding: 30px;
+  align-items: center;
+  padding-bottom: 100px;
+  border: 1px inset gray;
+  margin-left: 20px;
+}
+/* div{
+  align-items: center;
+} */
+p {
+  text-align: left;
+  /* margin-left: 20px; */
+  color: blue;
+  font-family: Arial;
+  display: inline-block;
+  margin-right: 500px;
+}
+h1{
+  /* margin-left: 20px; */
+  font-family: Arial black;
+}
+input{
+  /* margin-left: 20px; */
+  width: 500px;
+  border-radius: 6px;
+  /* background-image: url('searchicon.png'); */
+}
+h4{
+  margin-left: 50px;
+}
