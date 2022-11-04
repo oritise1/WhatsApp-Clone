@@ -30,3 +30,16 @@ input{
 h4{
   margin-left: 50px;
 }
+#profile__img {
+  border-radius: 100%;
+  height: 110px;
+}
+#message{
+  line-height: 0.8;
+  /* text-align: left;
+  margin-left: 20px;
+  color: blue;
+  font-family: Arial;
+  display: inline-block;
+  margin-right: 500px; */
+} 

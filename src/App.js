@@ -1,15 +1,18 @@
 import React from "react";
 import "./App.css";
-import AddFiles from "./components/Add File";
+import AddFiles from "./components/AddFile";
+import ProfileImg from "./images/ibrahim.webp";
 const App = () => {
-  const name = [{
-    mesage :'Ibrahim',
-    title:' Kareem'
-  },
-  {
-    mesage :'Ibrahim',
-    title:' Kareem'
-  }
+  const name = [
+    {
+      mesage: "Ibrahim",
+      title: " Kareem",
+      image: ProfileImg,
+    },
+    // {
+    //   mesage :'Ibrahim',
+    //   title:' Kareem'
+    // }
   ];
 
   return (
@@ -24,14 +27,17 @@ const App = () => {
         <p className="list"> Broadcast Lists</p>
         <p className="new"> New Group</p>
         <hr></hr>
-        {name.map(data => {
-          return (
-            <AddFiles
-              mesage={data.mesage}
-              title={data.title}
-            />
-          )
-        })}
+        <div id="message">
+          {name.map((data) => {
+            return (
+              <AddFiles
+                image={data.image}
+                mesage={data.mesage}
+                title={data.title}
+              />
+            );
+          })}
+        </div>
       </form>
     </div>
   );
