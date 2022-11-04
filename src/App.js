@@ -1,16 +1,17 @@
 import React from "react";
 import "./App.css";
-import AddFiles from "./components/addFile";
+import AddFiles from "./components/Add File";
 const App = () => {
-  const name = [
-                  'Ibrahim',
-                  ' Kareem'
-                ];
-  const view = [
-                  'Okay',
-                  ' Good'
-                ];
-  
+  const name = [{
+    mesage :'Ibrahim',
+    title:' Kareem'
+  },
+  {
+    mesage :'Ibrahim',
+    title:' Kareem'
+  }
+  ];
+
   return (
     <div className="App">
       <form>
@@ -23,7 +24,14 @@ const App = () => {
         <p className="list"> Broadcast Lists</p>
         <p className="new"> New Group</p>
         <hr></hr>
-        <AddFiles name1={name} view1={view} />
+        {name.map(data => {
+          return (
+            <AddFiles
+              mesage={data.mesage}
+              title={data.title}
+            />
+          )
+        })}
       </form>
     </div>
   );
